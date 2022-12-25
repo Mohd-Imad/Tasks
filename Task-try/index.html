@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>transforms</title>
+        <style>
+            div{
+                box-shadow: 0 0 20px black;
+                width:800px;
+                height:450px;
+                margin: 300px auto;
+                border-radius:10px ;
+                overflow: hidden;
+                position: relative;
+                animation: scroll 1s linear 2s;
+            }
+            #a
+            {
+                color:red;
+                background-size: cover;
+                background-image: url("./IMAGES/bmw.jpeg");
+                
+            }
+            #b
+            {
+                background-size: cover;
+                background-image: url("./IMAGES/door.jpg");
+                margin-top: 0%;
+                background-color: orange;
+                transition: all 8s linear 2s;
+            }
+            #c
+            {
+                margin-top: 0%;
+                background-image: url("./IMAGES/curtain.jpg");
+                background-size: cover;
+                transition: all 1s linear 0s;
+            }
+            #a:hover{
+                transform: rotateY(90 deg);
+            }
+            
+            #b:hover{
+                transform: translateY(-100%);
+            }
+            #c:hover
+            {
+                transform:rotateY(90 deg) ;
+            }
+            div:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="a">
+        <div id="b">
+        <div id="c">
+
+        </div>    
+        </div>
+        </div>
+    </body>
+</html>
